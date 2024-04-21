@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icono1.png" type="image/svg+xml">
+    <title>TechTales@JSSSTU</title>
+    <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+    <style>
+        /* Cascading Style Sheets */
+
+        *{
+            margin: 0;
+            padding: 0;
+            /* border: 1px solid yellow; */
+        }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url(../Poppins/Poppins-Regular.ttf);
+        }
+        @font-face {
+            font-family: bold;
+            src: url(../Poppins/Poppins-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: secound;
+            src: url(../Poppins/Poppins-Bold.ttf);
+        }
+
+        h1{
+            font-family: bold;
+        }
+
+        body{
+            font-family: myFirstFont, Verdana, Geneva, Tahoma, sans-serif;
+            cursor: default;
+        }
+
+        /* Website Scrollerbar */
+        body::-webkit-scrollbar {
+            width: 5px !important;
+            height: 5px !important;
+        }
+        body::-webkit-scrollbar-track {
+            background: #3838387c !important;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #e0120ba4 !important;
+            border: 1px solid #ff020279 !important;
+            border-radius: 1px !important;
+        }
+
+        .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(assets/images/background1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: transparent; /* Hide text initially */
+    padding-top: 50px;
+    overflow: hidden; /* Hide overflow to prevent content flickering */
+}
+
+.header-content {
+    text-align: center;
+    animation: fadeIn 2s ease-out forwards; /* Apply fade in animation to header content */
+}
+
+.college-logo {
+    width: 60%; /* Adjust as needed */
+    height: 60%;
+    opacity: 0; /* Initially hide the logo */
+    animation: slideIn 2s ease-out forwards; /* Apply slide in animation to logo */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+@keyframes fadeIn {
+    from { color: transparent; }
+    to { color: white; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="gallery.html" style="position: absolute; top: 20px; right: 20px; text-decoration: none; color: white; font-size: 20px; border-bottom: 2px solid transparent;">Gallery</a>
+        <div class="header-content">
+            <img class="college-logo" src="assets/images/jslogo.png" alt="College Logo">
+            <h1 style="font-size: 50px;">"TechTales: Chronicles from JSS Science and Technology University"</h1>
+        </div>
+    </header>
+
+    <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <div class="circular-image">
+              <img src="./assets/images/magzine.jpg" width="560" height="540" alt="Julia" class="w-100" data-reveal="top">
+            </div>
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              Welcome To TechTales @ JSSSTU!!
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s" style="font-size: 20px;">
+                Delve into captivating narratives that unravel the latest events, innovations, and discoveries shaping the technological landscape. From groundbreaking research to inspiring student projects, embark on a journey through the dynamic intersection of academia and industry, where ideas evolve and futures are forged. Join us as we explore the stories, challenges, and triumphs of tomorrow's tech leaders, all within the pages of TechTales.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+    <h1 style="text-align: center;">EVENTS</h1>
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h2 class="h2 section-title" id="project-label">Latest Events of CSE and ISE department.</h2>
+
+              <p class="section-text">
+                Check out some of the latest Events..
+              </p>
+            </div>
+
+            
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Google Developer Student Club</p>
+
+                  <h3 class="h3 card-title">Explore ML</h3>
+
+                  <p class="card-text">
+                    🌟 Explore ML & DL: Dive into the fascinating worlds of Machine Learning and Deep Learning! Beginner-friendly, hands-on, and packed with in-demand knowledge. Mark your calendars for March 1 & 2, 2024, at CS102, Golden Jubilee Block. Don't miss out! 👩‍💻👨‍💻
+                  </p>
+
+                  <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jss-science-technology-university-mysuru-presents-explore-ml-1/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                  
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/gdsc.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Google Developer Student Club</p>
+
+                  <h3 class="h3 card-title">DevFest Mysuru 2023</h3>
+
+                  <p class="card-text">
+                    GDSC JSSSTU presents DevFest 2023 Mysuru, a one-day event that brings together tech enthusiasts, developers, and innovators. The event will feature talks from experts from companies like Google and Intel, and cover topics such as AI, Flutter development, AI acceleration, and cloud computing. Certificates will be provided to attendees present throughout all the sessions.
+                  </p>
+
+                  <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jss-science-technology-university-mysuru-presents-devfest-mysuru-2023/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                  
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/gdsc2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+        </ul>
+      </section>
+      
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Google Developer Student Club</p>
+
+                  <h3 class="h3 card-title">CyberSec101</h3>
+
+                  <p class="card-text">
+                    Discover 'CyberSec101': A 3-day journey into cybersecurity for beginners and tech enthusiasts. Explore digital defense, social engineering, Kali tools, cryptography, and witness live cyber attack demonstrations. No prerequisites required. Join us from November 6th to 8th, 2023, at 5:30 PM in CS 102. Exclusive digital badges for participants. RSVP today for this exciting event!
+                  </p>
+
+                  <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jss-science-technology-university-mysuru-presents-cybersec101/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/gdsc3.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Google Developer Student Club</p>
+
+                  <h3 class="h3 card-title">Intro to Open Source: Hacktoberfest 2023</h3>
+
+                  <p class="card-text">
+                    GDSC JSSSTU presents-
+✨Intro to Open Source: Hacktoberfest 2023✨
+<br>
+📌Open source projects help you improve your coding skills and build your confidence as a developer. <br>
+📌Participants will get to learn about the wide range of opportunities that they can get via open source.
+
+
+                  </p>
+
+                  <a href="https://gdsc.community.dev/events/details/developer-student-clubs-jss-science-technology-university-mysuru-presents-intro-to-open-source-hacktoberfest-2023/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/gdsc4.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+        </ul>
+      </section>
+
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Linux Campus Club</p>
+
+                  <h3 class="h3 card-title">Decrypto</h3>
+
+                  <p class="card-text">
+                    🌟Decrypto🌟 <br>
+
+Put your puzzle-solving🧩 skills to the test as you decipher the hidden messages🔑 within picture🖼 clues. This thrilling event is open to all students and promises an exciting challenge for those who love a good brain🧠 teaser. <br>
+
+Participating in Decrypto is not only a fun way to test your wits, but it also gives you the chance to win some amazing prizes! . The winners of this event will walk away with cash prizes💸 of up to ₹1K, making it an opportunity you won't want to miss. <br>
+
+Decrypto is sure to be a memorable experience 😄. <br>Whether you're a seasoned puzzle enthusiast or just looking for a fun new activity👾, this event is perfect for anyone with a passion for problem solving. <br>
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C0USBucvWsD/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/linuxp.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Linux Campus Club</p>
+
+                  <h3 class="h3 card-title">Cryptic Hunt</h3>
+
+                  <p class="card-text">
+                    🐧 *LCC-JSSSTU* 🐧 is here with another exhilarating adventure at the Fosscamp. <br>
+                    🌟 *Cryptic Hunt* 🌟 <br>
+                    
+                    Cryptic Hunt is designed to challenge your problem-solving skills and put your intellect🧠 to test. *Gather your friends and form a team of 2️⃣ as you embark on a quest to decode 🔟 encrypted🔒 PDFs using the clues🔑 provided.* <br>
+                    
+                    The Cryptic Hunt will take you on a journey through the puzzling aroma🧩 where you'll uncover hidden treasures and unlock the next clue to lead you closer to the Exciting prize🎁. *No technical skills are required, so anyone can participate and enjoy the thrill of the hunt.* <br>
+                    
+                    *As you decipher each PDF, you can use web search🔍 and take as many attempts as needed to progress🌈 to the next level. The excitement doesn't stop there. Cash prizes💸 of up to 2k are up for grabs* , so put your thinking caps on and get ready to compete for the top spot. <br>
+
+
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C0Qv48erIDN/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/linux2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+        </ul>
+      </section>
+
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Linux Campus Club</p>
+
+                  <h3 class="h3 card-title">TRACKBACK</h3>
+
+                  <p class="card-text">
+                    ✨ *Greetings From LCC- JSSSTU*✨ <br>
+💻 Department of Computer Science and Engineering💻 <br>
+
+Feeling the coding blues with routine IDEs and scripts as predictable as yesterday's weather? 😴 <br>
+
+Say goodbye to the ordinary and let's script a tale of innovation! 🚀💻 <br>
+
+Break free from the coding monotony and dive into a realm where creativity is the code. Ready for a fresh coding adventure?💡 <br>
+
+We are coming up with our signature event *🌟TRACKBACK*🌟!! <br>
+
+While one must not count the penguins before they waddle, our penguins are out, but we need the eggs and it's you who can come up with the right process to get our output!💁🏻‍♀️ <br>
+
+The methods and approach is yours, given the input and output, it's right if it works and clears them all!🪄 <br>
+
+Embrace the cool challenge and lead our penguins to a successful adventure!🐧 <br>
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C0JmtTULsBT/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/linux3.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Linux Campus Club</p>
+
+                  <h3 class="h3 card-title">Spider Web</h3>
+
+                  <p class="card-text">
+                    ✨️Greetings From LCC-JSSSTU✨️ <br>
+💻Department of Computer Science & Engineering💻 <br>
+
+We are excited to announce our exhilarating and challenging event <br>
+🌟 *Spider Web* 🌟 <br>
+
+This unique and exciting event will test your problem-solving skills📊 and teamwork🤝 as you race against the clock⏰️ to *uncover hidden🥷 passwords and unlock a PDF on a specially designed website after which you will be solving the given DSA question* <br>
+
+Gather your friends👬 and form a team, one who successfully finds the hidden passwords and *unlocks🔑 the PDF first and solves the given DSA question will be declared the winner* and receive amazing prizes upto 2K🏆. <br>
+
+Spider Web is not only a fun and competitive event 🙌🏻, but it also provides an opportunity for students to showcase their creativity😎, critical thinking, and collaboration skills🧑‍🤝‍🧑. It's a fantastic way to bond with your peers and make new friends while participating in an engaging challenge. <br>
+
+
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C0G1_OZLPKT/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/linux4.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+        </ul>
+      </section>
+
+
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5">Computer Society of India JSSSTU</p>
+
+                  <h3 class="h3 card-title">ENIGMA</h3>
+
+                  <p class="card-text">
+                    Tired of the relentless semester grind? Break free and embark on an extraordinary adventure! <br>
+                    CSI presents the most anticipated annual extravaganza - *ENIGMA* 🎉 <br>
+                    
+                    Prepare for an exhilarating experience that will keep your heart racing with thrilling games, mind-bending puzzles, and challenging skill-based competitions! 🔥⚡️ <br>
+                    
+                    📅 *Date and Time*: 20th Oct, 5:30pm <br>
+                    📍 *Venue*: IS Seminar Hall. <br>
+                    
+                    Amazing prizes 💰💰 await along with a treasure trove of rewards and surprises throughout the event! 😋 <br>
+                  </p>
+
+                  <a href="https://www.instagram.com/p/Cyibi9jBAN_/?hl=en" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/csi1 (3).png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">Computer Society of India JSSSTU</p>
+
+                  <h3 class="h3 card-title">Ultimate Blockchain Webinar</h3>
+
+                  <p class="card-text">
+                    *Coding Ninjas* in association with *Computer Society of India*, is conducting the *Ultimate blockchain webinar* !🤩 <br>
+
+📌 What will you learn? <br>
+
+The webinar shall focus on the understanding the concept of the *blockchain*, the essence of *decentralization* as well as the use cases of the blockchain technology in the real life. The webinar shall also introduce you the *exciting job opportunities* in the very space and would share the path to get resources to start your journey in the blockchain space. <br>
+
+Speaker: Jitender Sharma, *Master's Discretion- Blockchain Technology, Co-Founder Of Pastel Sheep, NFT Collection On Fantom Chain, Marketing Campaign Manager, Based Labs* <br>
+
+
+                  </p>
+
+                  <a href="https://www.instagram.com/p/CxpciRkSt55/?hl=en" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/csi2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+        </ul>
+      </section>
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5"> IEEE-SJCE</p>
+
+                  <h3 class="h3 card-title">SQL Bootcamp</h3>
+
+                  <p class="card-text">
+                    Greetings from IEEE-SJCE!! 🎉 <br>
+
+                    Do you ever feel like your database skills are just 'NULL'? Would you like to 'UPDATE' your mastery of databases? Ready to 'JOIN' the league of SQL masters? 🧑‍💻 <br>
+                    
+                    WIE wing of IEEE-SJCE is back with its technical event,  <br>
+                    
+                    📑 SQL Bootcamp 📑 <br>
+                    
+                    An online bootcamp where you'll go through the diversities of Structured Query Language - SQL. You can develop strong backend skills to build and operate databases. Also, you will acquire the ability to overcome any database administration difficulties once the bootcamp is over. 🙌 <br>
+                    You will also be working on an exciting mini-project that highlights your abilities in your resume. 🤩 <br>
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C6BH-DILXW3/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/ie1.png" width="650" height="370" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #3f78e0">IEEE-SJCE</p>
+
+                  <h3 class="h3 card-title"> Python Bootcampr</h3>
+
+                  <p class="card-text">
+                    Greetings from IEEE-SJCE! ✨ <br>
+
+The RAS wing of IEEE-SJCE presents its annual event <br>
+
+      👨‍💻 Python Bootcamp 👩‍💻  <br>
+
+Are you a student aiming to kickstart your programming journey? 🤩 <br>
+The Python Bootcamp provides a well-organized approach for learning to program in Python. 👩‍💻 <br>
+This bootcamp is designed for beginners seeking to develop strong coding skills. 🥳 <br>
+The ability to program in Python gives prospective developers access to a multitude of job opportunities, from scripting to data science. 🤯 
+Join us and unlock the potential of Python for your coding journey!  <br>
+
+
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C3CK3vRrl4P/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/ie2.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+        </ul>
+      </section>
+
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #a07cc5"> Explore</p>
+
+                  <h3 class="h3 card-title">Visit Our Vibrant Campus</h3>
+
+                  <p class="card-text">
+                    JSS SCIENCE AND TECHNOLOGY UNIVERSITY JSS STU is the second University established by JSS Mahavidyapeetha, besides the JSS Academy of Higher Education and Research a health sciences focused deemed university at Mysuru. <br>
+
+                  </p>
+
+                  <a href="https://www.instagram.com/p/C6BH-DILXW3/" class="btn-text" style="color: #3f78e0">
+                    <span class="span">Check out event</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <video src="./assets/images/video1.mp4" width="650" height="370" autoplay loop muted playsinline class="w-100">
+                      Your browser does not support the video tag.
+                  </video>
+              </figure>
+              
+
+              </div>
+            </li>
+
+        </ul>
+      </section>
+
+      <!-- contact section -->
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-content" data-reveal="left">
+              <div class="card-icon">
+                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
+              </div>
+              <h2 class="h2 section-title">Suggestions</h2>
+              <p class="section-text">Add Your Valuable Suggestions Here</p>
+            </div>
+            <form action="#" class="contact-form" data-reveal="right" id="contactForm">
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name *" required class="input-field">
+                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
+              </div>
+              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
+              <button type="submit" class="btn btn-secondary">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © Team SHNR 
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.instagram.com/jssstunivofficial/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        
+
+        <li>
+          <a href="https://www.linkedin.com/school/jss-science-and-technology-university/?originalSubdomain=in" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="https://twitter.com/jssstuniv" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // Get the form element
+    const form = document.getElementById('contactForm');
+  
+    // Add submit event listener to the form
+    form.addEventListener('submit', function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      
+      // Show the alert message
+      alert("Thank you for your suggestion");
+      
+      // You can add additional code here to handle the form submission, like sending data to a server via AJAX
+    });
+  </script>
+    
+</body>
+</html>
